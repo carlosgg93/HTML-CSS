@@ -1,0 +1,83 @@
+.title {
+  font-family: sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo,
+.imgAuthor,
+.creativeCommons,
+.container {
+  display: block;
+  margin: auto;
+}
+
+.weigth {
+  font-weight: 400;
+}
+
+nav > ul {
+  float: left;
+  left: 50%;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+nav {
+  display: inline-block;
+  clear: both;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+}
+
+nav > ul > li {
+  /* float: left; */
+  position: relative;
+  padding: 5px;
+  right: 50%;
+}
+
+nav > ul > li > a {
+  font-family: sans-serif;
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+}
+
+a {
+  color: black;
+}
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  font-weight: 600;
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+hr {
+  border: 0.5px solid #ccc;
+}
+
+.container {
+  width: 80%;
+}
+
+.wiki {
+  padding-top: 20px;
+}
