@@ -9,7 +9,10 @@
 .logo,
 .imgAuthor,
 .creativeCommons,
-.container {
+.imgNews,
+.container,
+.headerSection,
+.YTvideo {
   display: block;
   margin: auto;
 }
@@ -79,5 +82,27 @@ hr {
 }
 
 .wiki {
+  padding-top: 20px;
+}
+
+.figcaption {
+  padding-top: 15px;
+}
+
+.headerSection {
+  width: 80%;
+  border-left: 3px solid black;
+}
+
+.headerSection > p,
+.headerSection > span {
+  padding: 10px;
+}
+
+.testimonialDescription {
+  padding-left: 30px;
+}
+
+footer {
   padding-top: 20px;
 }
