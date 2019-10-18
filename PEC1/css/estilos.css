@@ -106,3 +106,7 @@ hr {
 footer {
   padding-top: 20px;
 }
+
+iframe{
+  border:0px;
+}
