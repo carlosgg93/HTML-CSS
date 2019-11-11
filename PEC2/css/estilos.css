@@ -1,6 +1,6 @@
 :root {
   --main-bg-color: #306291;
-  --dark-bg-color: rgba(69, 141, 209, 0.8);
+  --dark-bg-color: rgba(69, 141, 209, 0.5);
   --light-bg-color: rgba(69, 141, 209, 0.2);
   --text-color: #1f1f11;
   --text-light-color: #666666;
@@ -184,23 +184,52 @@ nav > ul > li > a{
 }
 
 .tableDiv{
-  width:70%;
+  width:80%;
   display: block;
   margin: auto;
-  margin-bottom: 30px;
+  padding-bottom: 70px;
+  padding-top: 40px;
 }
 
 table{
-  width: 100%
+  width: 100%;
+  border-collapse: collapse;
 }
 
 table > caption{
   text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+table > tbody > tr > td{
+  border: 1px solid var(--main-bg-color);
+  text-align: center;
+  padding: 3px;
+}
+
+.headerTable{
+  color:white;
+  background-color:var(--dark-bg-color);
+  padding: 2px;
+}
+
+.subheaderTable{
+  color: var(--text-color);
+  font-weight: bold;
+  background-color:var(--light-bg-color);
+}
+
+.resultTable{
+  color:var(--main-bg-color) !important;
 }
 
 .lowsList{
   padding: 20px;
   padding-left: 50px;
+}
+
+.paddingBottom{
+  margin-bottom: 40px;
 }
 
 .mainColor{
