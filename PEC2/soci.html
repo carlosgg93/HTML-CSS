@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <title>Index</title>
+    <title>Asóciate</title>
     <link type="text/css" rel="stylesheet" href="./css/estilos.css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'/>
   </head>
@@ -30,8 +30,89 @@
         </nav>
       </div>
     </header>
-    <div >
-      <div class="content">
+    <div class="content">
+      <div class="container">
+        <h1>Formulario para hacerte socio</h1>
+        <p>
+          Para hacerte socio de nuestro club de fans, por favor rellena los siguientes datos y nos pondremos en contacto contigo lo antes posible para terminar el proceso de inscripción.
+        </p>
+        <div class="formDiv">
+            <form type="POST">
+              <fieldset>
+                <legend class="legend"><span class="fieldsetNumber">1</span> Datos personales</legend>
+                <i>Todos los campos con * son obligatorios</i><br /><br />
+                <p>
+                  <label for="name">Nombre*</label>
+                  <input type="text" name="name" id="name" required>
+                </p>
+                <p>
+                  <label for="surname1">Primer Apellido*</label>
+                  <input type="text" name="surname1" id="surname1" required>
+                </p>
+                <p>
+                  <label for="surname2">Segundo Apellido</label>
+                  <input type="text" name="surname2" id="surname2">
+                </p>
+                <p>
+                  <label for="nif">DNI o passaporte</label>
+                  <input type="text" placeholder="DNI o passaporte" name="nif" id="nif">
+                </p>
+                <p>
+                  <label for="date">Fecha de nacimiento</label>
+                  <input type="date" name="date" id="date">
+                </p>
+              </fieldset>
+              <fieldset>
+                <legend class="legend"><span class="fieldsetNumber">2</span> Datos de contacto</legend>
+                <p>
+                  <label for="email">Correo electrónico*</label>
+                  <input type="email" placeholder="Correo electrónico" name="email" id="email" required>
+                </p>
+                <p>
+                  <label for="postalcole">Código Postal*</label>
+                  <input type="number" name="postalcole" id="postalcole" required>
+                </p>
+                <p>
+                  <label for="address">Dirección postal*</label>
+                  <input type="text" name="address" id="address" required>
+                </p>
+                <p>
+                  <label for="city">Población*</label>
+                  <input type="text" name="city" id="city" required>
+                </p>
+              </fieldset>
+              <fieldset>
+                <legend class="legend"><span class="fieldsetNumber">3</span> Datos de inscripción</legend>
+                <p>
+                  <label for="type">Tipo*</label>
+                  <select name="type" id="type" required>
+                    <option>Senior</option>
+                    <option>Junior</option>
+                  </select>
+                </p>
+                <p>
+                  <label for="quota">Quota*</label>
+                  <select name="quota" id="quota" required>
+                    <option>General - 5€/mes</option>
+                    <option>Jubilados - 3€/mes</option>
+                    <option>Familiar - 11€/mes</option>
+                    <option>Otros</option>
+                  </select>
+                </p>
+                <fieldset>
+                  <legend>Periodicidad</legend>
+                  <input type="radio" name="period" value="Trimestral" checked> Trimestral
+                  <input type="radio" name="period" value="Semestral"> Semestral
+                  <input type="radio" name="period" value="Anual"> Anual
+                </fieldset>
+                <p>
+                  <label for="iban">IBAN</label>
+                  <input type="text" placeholder="(si no lo sabes, déjalo vacío)" name="iban" id="iban">
+                </p>
+                <input type="submit" class="sendButton" name="submit" value="ENVIAR">
+              </fieldset>
+            </form>
+        </div>
       </div>
     </div>
     <footer>

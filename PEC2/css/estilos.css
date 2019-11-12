@@ -12,7 +12,7 @@
 *{
   margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 }
 
 html{
@@ -61,12 +61,68 @@ footer{
   border-image-slice: 1;
 }
 
-form > .legend{
+.legend{
   font-size: 24px;
+  font-weight: bold;
 }
 
-form > .sendButton{
+.fieldsetNumber{
+  color: var(--main-bg-color);
+}
+
+form > fieldset{
+  background-color:var(--light-bg-color);
+  border-radius: 10px;
+  border: none;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+form > fieldset > p{
+  padding: 5px;
+}
+
+
+form > fieldset > i{
+  color: var(--text-light-color);
+}
+
+form > fieldset > p > label{
+  width:40%;
+  display: inline-block;
+}
+
+form > fieldset > p > input,form > fieldset > p > select{
+  border: 1px solid var(--dark-bg-color);
+  width:50%;
+  height: 25px;
+  border-radius: 3px;
+  outline: none;
+}
+
+form > fieldset > p > input:focus,
+form > fieldset > p > select:focus{
+  border: 1px solid var(--contrast-color);
+}
+
+form > fieldset > fieldset{
+  width:60%;
+  padding: 10px;
+  border: 1px solid var(--dark-bg-color);
+  border-radius: 5px;
+}
+
+.sendButton{
   font-size: 22px;
+  background-color: var(--contrast-color);
+  color:white;
+  text-align: center;
+  padding: 10px;
+  width: 35%;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
 }
 
 a{
@@ -141,12 +197,6 @@ nav > ul > li > a{
   height: 100%; */
 }
 
-/* .whiteBox > .content-whiteBox > h1{
-  padding-bottom: 30px;
-  color: var(--main-bg-color);
-} */
-
-
 .container > h1{
   font-family: var(--header-font);
   padding-top: 30px;
@@ -181,6 +231,12 @@ nav > ul > li > a{
   display: block;
   margin: auto;
   margin-bottom: 30px;
+}
+
+.formDiv{
+    width:60%;
+    display: block;
+    margin: auto;
 }
 
 .tableDiv{
