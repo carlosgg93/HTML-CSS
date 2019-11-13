@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Asóciate</title>
     <link type="text/css" rel="stylesheet" href="./css/estilos.css" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'/>
+    <link type="text/css" rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto%20Slab'/>
   </head>
   <body>
     <header>
@@ -37,7 +37,7 @@
           Para hacerte socio de nuestro club de fans, por favor rellena los siguientes datos y nos pondremos en contacto contigo lo antes posible para terminar el proceso de inscripción.
         </p>
         <div class="formDiv">
-            <form type="POST">
+            <form method="POST">
               <fieldset>
                 <legend class="legend"><span class="fieldsetNumber">1</span> Datos personales</legend>
                 <i>Todos los campos con * son obligatorios</i><br /><br />
@@ -86,17 +86,19 @@
                 <p>
                   <label for="type">Tipo*</label>
                   <select name="type" id="type" required>
-                    <option>Senior</option>
-                    <option>Junior</option>
+                    <option value="">Selecciona..</option>
+                    <option value="senior" selected>Senior</option>
+                    <option value="junior">Junior</option>
                   </select>
                 </p>
                 <p>
                   <label for="quota">Quota*</label>
                   <select name="quota" id="quota" required>
-                    <option>General - 5€/mes</option>
-                    <option>Jubilados - 3€/mes</option>
-                    <option>Familiar - 11€/mes</option>
-                    <option>Otros</option>
+                    <option value="">Selecciona..</option>
+                    <option value="general">General - 5€/mes</option>
+                    <option value="jubilados">Jubilados - 3€/mes</option>
+                    <option value="familiar">Familiar - 11€/mes</option>
+                    <option value="otros">Otros</option>
                   </select>
                 </p>
                 <fieldset>
