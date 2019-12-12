@@ -1,0 +1,49 @@
+:root {
+  --main-bg-color: #306291;
+  --dark-bg-color: rgba(69, 141, 209, 0.5);
+  --light-bg-color: rgba(69, 141, 209, 0.2);
+  --text-color: #1f1f11;
+  --text-light-color: #666666;
+  --contrast-color: #D9645D;
+  --header-font: "Roboto Slab";
+  --main-font: "Roboto";
+}
+
+html{
+  font-family: var(--main-font);
+}
+
+header > .flex-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item {
+  width: auto;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 20px;
+}
+
+.flex-item > a{
+  text-decoration: none;
+  color:black
+}
+
+/* xs */
+@media (max-width: 767px) {
+  header > .flex-container{
+    flex-direction: column;
+  }
+
+  .flex-item {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+  }
+}
