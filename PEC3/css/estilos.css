@@ -9,6 +9,11 @@
   --main-font: "Roboto";
 }
 
+*{
+  margin: 0;
+	padding: 0;
+}
+
 html{
   font-family: var(--main-font);
 }
@@ -33,9 +38,72 @@ header > .flex-container{
   color:black
 }
 
+.flex-item > a:hover{
+  font-weight: bold;
+}
+
+.responsive{
+  display: none;
+}
+
+
+
+footer {
+    background-color: #222;
+    color: #fff;
+}
+
+footer > .super-flex-container >{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+footer > .super-flex-container > .flex-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > #rrss > .flex-item >a{
+  text-decoration: none;
+  color:white
+}
+
+footer > #interestedLinks > .flex-item > a{
+  text-decoration: none;
+  color:white
+}
+
 /* xs */
 @media (max-width: 767px) {
+  .responsive{
+    display: block;
+  }
+
+  .responsive > a{
+    text-decoration: none;
+    color:black
+  }
+
   header > .flex-container{
+    display: none
+  }
+
+  header > .show{
+    flex-direction: column;
+    display: block
+  }
+
+  footer > .super-flex-container >{
+    flex-direction: column;
+  }
+
+
+  footer > .super-flex-container > .flex-container{
     flex-direction: column;
   }
 
@@ -45,5 +113,18 @@ header > .flex-container{
     text-align: center;
     line-height: 20px;
     font-size: 15px;
+  }
+
+  .logo-item{
+    display: none
+  }
+
+  .logo-responsive{
+    display: table;
+    margin: auto;
+  }
+
+  .menu{
+    padding: 10px;
   }
 }

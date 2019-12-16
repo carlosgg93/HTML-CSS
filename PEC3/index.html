@@ -4,9 +4,19 @@
     <meta charset="utf-8" />
     <title>Index</title>
     <link type="text/css" rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
+      <div class="responsive">
+        <a href="javascript:void(0);" class="menu icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+        <a href="index.html" class="logo-responsive">
+          <img src="./img/logo-site.png" alt="logo" />
+        </a>
+      </div>
       <div class="flex-container">
         <div class="flex-item">
           <a class="contrastColor" href="objetivos.html">OBJETIVOS</a>
@@ -14,9 +24,9 @@
         <div class="flex-item">
           <a href="">ACTUALIDAD</a>
         </div>
-        <div class="flex-item">
+        <div class="flex-item logo-item">
           <a href="index.html">
-            <img class="logo" src="./img/logo-site.png" alt="logo" />
+            <img src="./img/logo-site.png" alt="logo" />
           </a>
         </div>
         <div class="flex-item">
@@ -27,5 +37,62 @@
         </div>
       </div>
     </header>
+    <section id="content">
+
+    </section>
+    <footer>
+      <div class="super-flex-container">
+        <div id="interestedLinks" class="flex-container">
+          <div class="flex-item">
+            <a href="" class="icon">
+              <span>Sobre Nosotros</span>
+            </a>
+          </div>
+          <div class="flex-item">
+            <a href="" class="icon">
+              <span>Aviso Legal</span>
+            </a>
+          </div>
+          <div class="flex-item">
+            <a href="" class="icon">
+              <span>Política de privacidad</span>
+            </a>
+          </div>
+        </div>
+
+        <div id="rrss" class="flex-container">
+          <div class="flex-item">
+            <a href="" class="icon">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </div>
+          <div class="flex-item">
+            <a href="" class="icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+          <div class="flex-item">
+            <a href="" class="icon">
+              <i class="fa fa-youtube-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="authory">
+
+      </div>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.querySelector(".flex-container");
+        if (x.className === "flex-container") {
+          x.className += " show";
+        } else {
+          x.className = "flex-container";
+        }
+      }
+    </script>
   </body>
 </html>
