@@ -30,7 +30,7 @@ header > .flex-container{
   margin: 10px;
   text-align: center;
   line-height: 75px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .flex-item > a{
@@ -53,29 +53,68 @@ footer {
     color: #fff;
 }
 
-footer > .super-flex-container >{
+footer > .super-flex-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-
-footer > .super-flex-container > .flex-container{
+footer > .flex-container{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-footer > #rrss > .flex-item >a{
+footer > .super-flex-container > .flex-container-left{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: flex-start;
+}
+
+footer > .super-flex-container > .flex-container-right{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+footer > .super-flex-container > .flex-container-left > .flex-item >a{
   text-decoration: none;
   color:white
 }
 
-footer > #interestedLinks > .flex-item > a{
+footer > .super-flex-container > .flex-container-right > .flex-item > a{
   text-decoration: none;
   color:white
+}
+
+.go-top {
+    padding-top: 5px;
+    cursor: pointer;
+    left: 5%;
+    bottom: 0;
+    width: 40px;
+    height: 30px;
+    background: #563d7c;
+    position: fixed;
+    z-index: 2;
+    text-align: center;
+}
+
+/* md */
+@media (max-width: 990px) {
+  footer > .super-flex-container > .flex-container-left{
+    width: 70%;
+  }
+}
+
+/* sm */
+@media (max-width: 850px) {
+  footer > .super-flex-container > .flex-container-left{
+    width: 95%;
+  }
 }
 
 /* xs */
@@ -95,23 +134,44 @@ footer > #interestedLinks > .flex-item > a{
 
   header > .show{
     flex-direction: column;
-    display: block
+    display: block;
   }
 
-  footer > .super-flex-container >{
+  footer > .super-flex-container{
     flex-direction: column;
   }
 
 
-  footer > .super-flex-container > .flex-container{
+  footer > .super-flex-container > .flex-container-left{
     flex-direction: column;
   }
 
-  .flex-item {
+  footer > .super-flex-container > .flex-container-right{
+    flex-direction: column;
+  }
+
+  footer > .super-flex-container > .flex-container-left > .flex-item {
     width: 100%;
     margin: 10px;
     text-align: center;
     line-height: 20px;
+    font-size: 15px;
+  }
+
+  footer > .super-flex-container > .flex-container-right > .flex-item{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  footer > .flex-container{
+    justify-content: center;
+  }
+
+  footer > .flex-container > .flex-item{
+    line-height: 25px;
     font-size: 15px;
   }
 

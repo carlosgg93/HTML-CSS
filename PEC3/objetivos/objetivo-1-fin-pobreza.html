@@ -40,7 +40,61 @@
     <section id="content">
 
     </section>
+    <footer>
+      <div class="super-flex-container">
+        <div id="interestedLinks" class="flex-container-left">
+          <div class="flex-item">
+            <a href="" class="icon">
+              <span>Sobre Nosotros</span>
+            </a>
+          </div>
+          <div class="flex-item">
+            <a href="" class="icon">
+              <span>Aviso Legal</span>
+            </a>
+          </div>
+          <div class="flex-item">
+            <a href="" class="icon">
+              <span>Política de privacidad</span>
+            </a>
+          </div>
+        </div>
+
+        <div id="rrss" class="flex-container-right">
+          <div class="flex-item">
+            <a href="" class="icon">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </div>
+          <div class="flex-item">
+            <a href="" class="icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+          <div class="flex-item">
+            <a href="" class="icon">
+              <i class="fa fa-youtube-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="authory" class="flex-container">
+        <div class="flex-item">
+          © 2019-2020 Carlos García García. Trabajo realizado para la asignatura  HTML y CSS. Primer semestre del curso 2019-2020
+        </div>
+      </div>
+      <div class="go-top" style="display: block;"><i class="fa fa-angle-up"></i></div>
+    </footer>
     <script>
+
+      //GOTOTOP
+      document.querySelector('.go-top').onclick = function(event) {
+        event.preventDefault();
+        window.scrollTo(0, 0);
+      };
+
       function myFunction() {
         var x = document.querySelector(".flex-container");
         if (x.className === "flex-container") {
@@ -51,4 +105,4 @@
       }
     </script>
   </body>
-</html>
+  </html>
