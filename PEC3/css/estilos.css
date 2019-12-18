@@ -46,7 +46,41 @@ header > .flex-container{
   display: none;
 }
 
+#content > .flex-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
+#content > .flex-container > .flex-item{
+  width: 60%;
+  line-height: 25px;
+}
+
+#content > .flex-container > .flex-item > p{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#content > .flex-container > .flex-item > iframe{
+  width:100%;
+  height:450px;
+}
+
+#content > #titular2{
+  text-align: center;
+}
+
+#content > #titular2 > .grid-container-image{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  /* grid-gap: 5px; */
+}
+
+#content > #titular2 > .grid-container-image > a > img{
+  width: 100%;
+}
 
 footer {
     background-color: #222;
@@ -105,6 +139,16 @@ footer > .super-flex-container > .flex-container-right > .flex-item > a{
 
 /* md */
 @media (max-width: 990px) {
+  #content > .flex-container > .flex-item > iframe{
+    height:350px;
+  }
+
+  #content > #titular2 > .grid-container-image{
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    /* grid-gap: 5px; */
+  }
+
   footer > .super-flex-container > .flex-container-left{
     width: 70%;
   }
@@ -112,6 +156,16 @@ footer > .super-flex-container > .flex-container-right > .flex-item > a{
 
 /* sm */
 @media (max-width: 850px) {
+  #content > .flex-container > .flex-item > iframe{
+    height:300px;
+  }
+
+  #content > #titular2 > .grid-container-image{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    /* grid-gap: 5px; */
+  }
+
   footer > .super-flex-container > .flex-container-left{
     width: 95%;
   }
@@ -135,6 +189,17 @@ footer > .super-flex-container > .flex-container-right > .flex-item > a{
   header > .show{
     flex-direction: column;
     display: block;
+  }
+
+  #content > .flex-container > .flex-item > iframe{
+    width:100%;
+    height:250px;
+  }
+
+  #content > #titular2 > .grid-container-image{
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    /* grid-gap: 5px; */
   }
 
   footer > .super-flex-container{
