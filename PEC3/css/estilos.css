@@ -62,7 +62,7 @@ header > .flex-container{
   padding-bottom: 20px;
 }
 
-#content > article > h2{
+#content > article > h2, #content > .container > h2{
   padding-bottom: 20px;
 }
 
@@ -83,17 +83,58 @@ header > .flex-container{
 #content > #titular2 > .grid-container-image{
   display: grid;
   grid-template-columns: repeat(6, 16.66%);
-  /* grid-gap: 5px; */
 }
 
 #content > #titular2 > .grid-container-image > a > img{
   width: 100%;
 }
 
+#content > .container {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+#content > .container > .grid-container{
+  display: grid;
+  grid-template-columns: repeat(3,33.33%);
+  grid-row-gap:1%;
+}
+
+#content > .container > .grid-container > a > img{
+  width: 100%;
+}
+
+#content > .container > .grid-container > .titular {
+  padding-left: 20px;
+}
+
+#content > .container > .grid-container > .titular > a {
+  text-decoration: none;
+  color: black;
+}
+
+#content > .container > .grid-container > .titular > a >h2{
+  text-align: left;
+}
+
+#content > .container > .grid-container > .titular > p{
+  text-align: justify;
+}
+
+#content > .container > .grid-container > .titular > p > a.info{
+  text-decoration: underline;
+  color:blue;
+  text-align: left;
+}
+
+
+
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
   background-color: #eee;
+  margin-bottom: 20px;
 }
 
 ul.breadcrumb li {
@@ -181,7 +222,6 @@ footer > .super-flex-container > .flex-container-right > .flex-item > a{
   #content > #titular2 > .grid-container-image{
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
-    /* grid-gap: 5px; */
   }
 
   footer > .super-flex-container > .flex-container-left{
@@ -198,7 +238,6 @@ footer > .super-flex-container > .flex-container-right > .flex-item > a{
   #content > #titular2 > .grid-container-image{
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    /* grid-gap: 5px; */
   }
 
   footer > .super-flex-container > .flex-container-left{
@@ -234,7 +273,6 @@ footer > .super-flex-container > .flex-container-right > .flex-item > a{
   #content > #titular2 > .grid-container-image{
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    /* grid-gap: 5px; */
   }
 
   footer > .super-flex-container{
