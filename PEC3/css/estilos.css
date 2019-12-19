@@ -58,6 +58,14 @@ header > .flex-container{
   line-height: 25px;
 }
 
+#content > article{
+  padding-bottom: 20px;
+}
+
+#content > article > h2{
+  padding-bottom: 20px;
+}
+
 #content > .flex-container > .flex-item > p{
   padding-top: 20px;
   padding-bottom: 20px;
@@ -74,7 +82,7 @@ header > .flex-container{
 
 #content > #titular2 > .grid-container-image{
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(6, 16.66%);
   /* grid-gap: 5px; */
 }
 
