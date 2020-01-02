@@ -49,7 +49,7 @@ header > .flex-container{
 #content > .flex-container{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
 
@@ -105,6 +105,19 @@ header > .flex-container{
   width:70%;
 }
 
+#content > .flex-container >.container > h1{
+  padding-bottom: 20px;
+}
+
+#content > .flex-container >.container > article > h2{
+  padding-bottom: 10px;
+}
+
+#content > .flex-container >.container > article > .titularList{
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
 #content > #titular2{
   text-align: center;
 }
@@ -121,6 +134,11 @@ header > .flex-container{
 #content > .container {
     text-align: center;
     width: 60%;
+    margin:auto;
+}
+
+#content > .container > article > .titularList{
+  padding-left: 20px;
 }
 
 #content > .container > .grid-container{
@@ -156,8 +174,6 @@ header > .flex-container{
   color:blue;
   text-align: left;
 }
-
-
 
 ul.breadcrumb {
   padding: 10px 16px;
@@ -291,16 +307,25 @@ footer > .super-flex-container > .flex-container-right > .flex-item > a{
 
   .responsive > a{
     text-decoration: none;
-    color:black
+    color:black;
   }
 
   header > .flex-container{
-    display: none
+    display: none;
   }
 
   header > .show{
     flex-direction: column;
     display: block;
+  }
+
+  #content > .flex-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #content > .flex-container > .container >h1{
+    padding-top: 20px;
   }
 
   #content > .flex-container > .flex-item > iframe{
