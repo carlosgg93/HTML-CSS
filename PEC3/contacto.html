@@ -43,6 +43,75 @@
         <li><a href="./index.html">Inicio</a></li>
         <li>Contacto</li>
       </ul>
+      <div class="contact-container">
+        <h1>Propón una actividad</h1>
+        <div class="formDiv">
+            <form method="POST">
+              <fieldset>
+                <legend class="legend"><span class="fieldsetNumber"></span> Datos de contacto</legend>
+                <i>Todos los campos con * son obligatorios</i><br /><br />
+                <p>
+                  <label for="email">Dirección de correo electrónico *</label>
+                  <input type="email" name="email" id="email" required>
+                </p>
+
+                <p>
+                  <label for="name">Nombre y apellidos de la persona de contacto*</label>
+                  <input type="text" name="name" id="name" required>
+                </p>
+
+                <p>
+                  <label for="organization">Organización*</label>
+                  <input type="text" name="organization" id="organization" required>
+                </p>
+
+                <p>
+                  <label for="address">Dirección postal*</label>
+                  <input type="text" name="address" id="address" required>
+                </p>
+
+                <p>
+                  <label for="phone">Teléfono*</label>
+                  <input type="text" name="phone" id="phone" required>
+                </p>
+
+              </fieldset>
+              <fieldset>
+                <legend class="legend"><span class="fieldsetNumber"></span> Propuesta de actividad</legend>
+                <p>
+                  <label for="type">Objetivos de la Agenda 2030*</label>
+                  <select name="type" id="type" required>
+                    <option value="1" selected>Fin de la pobreza</option>
+                    <option value="2">Hambre cero</option>
+                    <option value="3">Salud y bienestar</option>
+                    <option value="4">Educación de calidad</option>
+                    <option value="5">Igualdad de género</option>
+                    <option value="6">Agua limpia y saneamiento</option>
+                    <option value="7">Energía asequible y no contaminante</option>
+                    <option value="8">Trabajo decente y crecimiento económico</option>
+                    <option value="9">Industria, innovación e infraestructura</option>
+                    <option value="10">Reducción de las desigualdades</option>
+                    <option value="11">Ciudades y comunidades sostenibles</option>
+                    <option value="12">Producción y consumo responsables</option>
+                    <option value="13">Acción por el clima</option>
+                    <option value="14">Vida submarina</option>
+                    <option value="15">Vida de ecosistemas terrestres</option>
+                    <option value="16">Paz, justicia e instituciones sólidas</option>
+                    <option value="17">Alianzas para lograr los objetivos</option>
+                  </select>
+                </p>
+
+                <p>
+                  <label for="type"></label>
+                  <textarea rows="10" placeholder="Descripción de la actividad propuesta" required></textarea></textarea>
+                </p>
+              </fieldset>
+
+              <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2"><a href="">Acepto la política de protección de datos</a></label></br>
+              <input type="submit" class="sendButton" name="submit" value="ENVIAR">
+            </form>
+        </div>
+      </div>
     </section>
     <footer>
       <div class="super-flex-container">

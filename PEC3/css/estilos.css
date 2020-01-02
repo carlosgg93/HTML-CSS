@@ -175,6 +175,78 @@ header > .flex-container{
   text-align: left;
 }
 
+.contact-container{
+  width: 70%;
+  margin: auto;
+}
+
+.contact-container > h1{
+  text-align: center;
+}
+
+form > fieldset{
+  background-color:var(--light-bg-color);
+  border-radius: 10px;
+  border: none;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+form > fieldset > p{
+  padding: 5px;
+}
+
+
+form > fieldset > i{
+  color: var(--text-light-color);
+}
+
+form > fieldset > p > label{
+  width:40%;
+  display: inline-block;
+}
+
+form > fieldset > p > input,form > fieldset > p > select{
+  border: 1px solid var(--dark-bg-color);
+  width:50%;
+  height: 25px;
+  border-radius: 3px;
+  outline: none;
+}
+
+form > fieldset > p > textarea{
+  border: 1px solid var(--dark-bg-color);
+  width:50%;
+  border-radius: 3px;
+  outline: none;
+}
+
+form > fieldset > p > input:focus,
+form > fieldset > p > select:focus{
+  border: 1px solid var(--contrast-color);
+}
+
+form > fieldset > fieldset{
+  width:60%;
+  padding: 10px;
+  border: 1px solid var(--dark-bg-color);
+  border-radius: 5px;
+}
+
+.sendButton{
+  font-size: 20px;
+  background-color: var(--contrast-color);
+  color:white;
+  text-align: center;
+  padding: 5px;
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
@@ -273,6 +345,11 @@ footer > .super-flex-container > .flex-container-right > .flex-item > a{
     grid-template-columns: repeat(2,50%);
   }
 
+  .contact-container{
+    width: 98%;
+    margin: auto;
+  }
+
   .empty{
     display: none
   }
@@ -280,6 +357,7 @@ footer > .super-flex-container > .flex-container-right > .flex-item > a{
   footer > .super-flex-container > .flex-container-left{
     width: 70%;
   }
+
 }
 
 /* sm */
@@ -340,6 +418,24 @@ footer > .super-flex-container > .flex-container-right > .flex-item > a{
 
   #content > .container > .grid-container{
     grid-template-columns: repeat(1,100%);
+  }
+
+  form > fieldset > p > label{
+    width:100%;
+  }
+
+  form > fieldset > p > input,form > fieldset > p > select{
+    width:100%;
+  }
+
+  form > fieldset > p > textarea{
+    width:100%;
+  }
+
+  .sendButton{
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   footer > .super-flex-container{
